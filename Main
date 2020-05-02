@@ -1,0 +1,64 @@
+package com.company;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.lang.*;
+import javassist.ClassPool;
+import com.company.G;
+
+
+
+
+
+public class Main {
+    static ClassPool classPool = ClassPool.getDefault();
+
+
+    public static void Err(){
+        Err();
+        return;
+    }
+
+
+    public static void main(String[] args) throws Exception{
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a==1){
+
+            ArrayList<Integer> list = new ArrayList<Integer>();
+            list.add(0);
+            for(int i=0;i<list.size();i++){
+                list.add(0);
+               // System.out.println(a);
+            }
+        }
+        else if(a==2){
+            StringBuilder s = new StringBuilder();
+
+            while (true) {
+                s.append("AAAAAAAAA");
+            }
+        }
+        else if(a==3){
+            for (int i = 0; i < 1000000; i++) {
+
+                Class clas = classPool.makeClass(
+                        i + " outofmemory.OutOfMemoryErrorMetaspace ").toClass();
+                System.out.println(clas.getName());
+            }
+        }
+        else if(a==4){
+        Err();
+        }
+        else if(a==5){
+            G g = new G();
+
+            }
+        }
+
+
+
+
+
+    }
+
