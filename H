@@ -1,0 +1,14 @@
+package com.company;
+
+
+public class H {
+
+    public H(){
+        G h = new G();
+    }
+
+
+    public static void main(String[] args) {
+
+    }
+}
